@@ -2,12 +2,12 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>[[${pageTitle}]]</title>
+    <title>Đăng ký</title>
     <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"/>
 </head>
 <body>
   <div class="container-fluid">
-      <div class="text-center"><h2>Đăng Ký</h2></div>
+      <div class="text-center"><h2>[[${pageTitle}]]</h2></div>
      <form th:action="@{/users/save}" method="post" th:object="${user}"
      style="max-width: 500px; margin: 0 auto;">
          <input type="hidden" th:field="*{id}">

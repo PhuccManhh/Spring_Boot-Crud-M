@@ -24,7 +24,7 @@ public class UserController<UserNotFoundException extends Throwable> {
     @GetMapping("/users/new")
     public String showNewForm(Model model){
         model.addAttribute("user", new User());
-        model.addAttribute("pageTitle","Add New User");
+        model.addAttribute("pageTitle","Đăng Ký");
         return "user_form";
 
     }

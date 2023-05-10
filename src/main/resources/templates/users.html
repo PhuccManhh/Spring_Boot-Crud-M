@@ -2,12 +2,15 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Danh Sách ID</title>
+    <title>[[${pageTitle}]]</title>
     <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"/>
 </head>
 <body>
 <div class="container-fluid text-center">
-    <div><h2>Danh Sách Đã Đăng Ký Thi</h2></div>
+    <div>
+
+        <h2>Danh Sách Đã Đăng Ký Thi</h2>[[${pageTitle}]]
+    </div>
     <div class="m-2">
         <a class="h4 m-2" th:href="@{/users/new}">Đăng Ký</a>
     </div>
